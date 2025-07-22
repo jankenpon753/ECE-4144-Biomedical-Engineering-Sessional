@@ -1,5 +1,5 @@
-\documentclass[12pt]{article}
-\usepackage[a4paper, total={6in, 9in}]{geometry}
+\documentclass[11pt]{article}
+\usepackage[a4paper, total={6.5in, 9.5in}]{geometry}
 \usepackage{graphicx}
 \graphicspath{ {./images/output/} }
 \usepackage{caption}
@@ -15,7 +15,8 @@
 
 % \usepackage{lipsum}
 
-\title{Basics of Oscilloscope and Signal Generator}
+\title{Experiment 1 \\
+    \textbf{Study of ECG Signal Using Digital Electrocardiogram Device}}
 \author{}
 \date{}
 
@@ -24,42 +25,63 @@
 \input{mayenul_sir_cover.tex}
 
 \pagebreak
-
-\tableofcontents
-
-\pagebreak
-\pagenumbering{arabic}
 \maketitle
 
+\section*{Objectives}
+\begin{itemize}
+    \item Acquire and examine human ECG signals utilizing a digital electrocardiograph with 10 leads.
+    \item Detect and distinguish ECG waveform features, including the P wave, QRS complex, and T wave.
+    \item Comprehend the positioning and importance of limb and chest leads for interpreting ECG results.
+\end{itemize}
+
 \section*{Theory}
-\addcontentsline{toc}{section}{Theory}
+An electrocardiogram (ECG) records the heart’s electrical signals using electrodes placed on the skin. In clinical practice, a typical ECG setup employs 10 electrodes—4 on the limbs and 6 on the chest—to generate 12 distinct leads. These include 3 standard limb leads (I, II, III), 3 augmented limb leads (aVR, aVL, aVF), and 6 precordial (chest) leads (V1–V6). Each lead offers a different perspective on the heart’s electrical activity, aiding in comprehensive cardiac assessment. By analyzing changes in the P wave, QRS complex, and T wave across these leads, clinicians can detect irregularities such as arrhythmias, heart attacks, and other cardiac disorders.
 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{sigGen2.png}
-%     \caption{Signal Generator}
-%     % \label{fig:Signal Generator}
-% \end{figure}
+\subsection*{ECG Lead Types and Electrode Placement}
+\begin{itemize}
+    \item \textbf{Lead I} (Limb; Right Arm): LA - RA
+    \item \textbf{Lead II} (Limb; Left Arm): LL - RA
+    \item \textbf{Lead III} (Limb; Left Leg): LL - LA
+    \item \textbf{Lead IV} (Limb; Right Leg): Ground
+    \item \textbf{aVR} (Augmented): RA - (LA + LL)/2
+    \item \textbf{aVL} (Augmented): LA - (RA + LL)/2
+    \item \textbf{aVF} (Augmented): LL - (RA + LA)/2
+    \item \textbf{V1} (Chest): 4th intercostal space, right sternal border
+    \item \textbf{V2} (Chest): 4th intercostal space, left sternal border
+    \item \textbf{V3} (Chest): Between V2 and V4
+    \item \textbf{V4} (Chest): 5th intercostal space, midclavicular line
+    \item \textbf{V5} (Chest): Same level as V4, anterior axillary line
+    \item \textbf{V6} (Chest): Same level as V4, midaxillary line
+\end{itemize}
 
+\section*{Required Equipment}
+\begin{itemize}
+    \item 10-lead Digital Electrocardiograph (HP-1300plus)
+    \item ECG lead wires and disposable electrodes
+    \item Volunteer human subject
+    \item ECG paper or digital display for signal observation
+\end{itemize}
+
+
+\section*{Experimental Observation}
+\begin{itemize}
+    \item The volunteer was asked to relax and remain still in a supine position to minimize motion artifacts.
+    \item Standard electrode placement was followed: four electrodes were attached to the limbs and six to the chest at designated anatomical locations.
+    \item The digital ECG system successfully recorded signals from all twelve leads, providing clear and consistent waveforms.
+    \item Lead II produced the most prominent and stable trace, which was used to determine the subject’s heart rate.
+    \item The characteristic ECG features—P wave, QRS complex, and T wave—were easily identified in the recordings.
+    \item The subject’s ECG showed normal sinus rhythm, with no evidence of arrhythmias or abnormal patterns.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{1.jpg}
+    \caption{ECG}
+\end{figure}
 
 \section*{Discussion}
 \addcontentsline{toc}{section}{Discussion}
-In this experiment, we worked with two essential tools in electronics laboratories: the oscilloscope and the signal generator. The oscilloscope allows us to visualize electronic signals, while the signal generator produces a variety of signals at adjustable frequencies. Together, these devices play a critical role in testing and analyzing electronic circuits.\\\\
-We gained hands-on experience by using these tools to observe and evaluate signals. Adjustments were made to both devices to see how changes in settings affected the signals. Additionally, we connected the signal generator to the oscilloscope to monitor the generated waveforms directly on the screen.\\\\
-This practical session was highly beneficial, providing us with valuable experience in using these tools effectively. It demonstrated their importance in the field of electronics for testing, troubleshooting, and analyzing circuits.\\\\
-In summary, the oscilloscope and signal generator are indispensable instruments in any electronics laboratory. The oscilloscope offers a detailed representation of signal characteristics, while the signal generator provides controlled test signals. By combining their functionalities, they allow engineers to create, measure, and analyze signals, ensuring that electronic devices and circuits perform as expected.
-
-\section*{Precaution \& Conclusion}
-\addcontentsline{toc}{section}{Precaution}
-To ensure safe and effective use of the equipment, the following precautions were observed during the experiment:
-\begin{itemize}
-    \item Both the oscilloscope and signal generator were powered off when not in use to prevent potential damage.
-    \item Probes and cables were connected or disconnected only when the devices were switched off to maintain safety and avoid electrical faults.
-    \item Settings on the instruments were adjusted carefully to prevent any misconfigurations or damage to the devices.
-    \item Only the provided, calibrated probes and cables were used to ensure accurate measurements.
-    \item After completing the experiment, all equipment was returned to its designated safe storage location.\\\\
-\end{itemize}
-This experiment reinforced the critical role of the oscilloscope and signal generator in electronics. It highlighted their complementary functionalities, with the oscilloscope visualizing signal behavior and the signal generator providing precise, controllable inputs for testing. Through this exercise, we developed a deeper understanding of how these tools are used in real-world applications to diagnose, validate, and optimize electronic circuits. Moreover, adhering to proper precautions ensured the longevity of the equipment and the safety of the users, emphasizing the importance of best practices in a laboratory setting.
+Using the HP-1300plus digital ECG device, twelve standard leads were recorded with reliable signal quality. The device’s IEC60601-1 safety compliance ensured safe use. Proper electrode placement was crucial for accurate waveforms, with Lead II providing the clearest signal for heart rate measurement. This experiment enhanced understanding of cardiac conduction and the clinical value of different ECG leads.
 
 \bibliographystyle{IEEEtran}
 \renewcommand{\bibname}{References}
