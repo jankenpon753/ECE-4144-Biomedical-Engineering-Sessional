@@ -1,0 +1,40 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, total={6.5in, 9.4in}]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./images/output/} }
+\usepackage{caption}
+\usepackage[english]{babel}
+\usepackage{titling}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{minted}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{setspace}
+\usepackage{placeins}
+
+\usepackage{parskip}
+
+% \usepackage{lipsum}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\input{mayenul_sir_cover.tex}
+\pagebreak
+
+\begin{center}
+    {\Large\bfseries Table of Contents}\\[1em]
+    \small
+    \begin{tabular}{|>{\centering\arraybackslash}p{0.05\textwidth}|>{\raggedright\arraybackslash}p{0.70\textwidth}|>{\centering\arraybackslash}p{0.18\textwidth}|}
+        \hline
+        \textbf{Exp No.} & \textbf{Experiment Name}                                                                              & \textbf{Date}   \\ \hline
+        1                & Study of ECG Signal Using Digital Electrocardiogram Device                                            & July 16, 2025   \\ \hline
+        2                & Analysis of an Electroencephalogram (EEG) Signal                                                      & July 30, 2025   \\ \hline
+        3                & Experimental Observation of Various Features of an ECG Signal Collected from PhysioNet Public Dataset & August 06, 2025 \\ \hline
+        4                & Observation of Various Features of an EEG Signal Collected from Kaggle MNE Database                   & August 13, 2025 \\ \hline
+    \end{tabular}
+\end{center}
+
+\end{document}
